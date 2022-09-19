@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(52, 52, 52);
+            position: relative;
+        }
+
+        .box {
+            width: 80px;
+            height: 100%;
+            text-align: center;
+            line-height: 80px;
+            font-family: serif;
+            color: white;
+
+
+        }
+
+        .box:hover {
+            color: blue;
+            background-color: rgba(74, 71, 76, 255);
+        }
+
+        .home {
+            background-color: rgb(52, 52, 52);
+            position: absolute;
+
+            left: 75%;
+        }
+
+        .earth {
+            background-color: rgb(52, 52, 52);
+            position: absolute;
+            left: 80%;
+
+        }
+
+        .sun {
+            background-color: rgb(52, 52, 52);
+            position: absolute;
+            left: 85%;
+        }
+
+        .text {
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 40px;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            color: white;
+
+        }
+
+        .company {
+            width: 100%;
+            height: 500px;
+            /*    NOKTE          */
+            background-image:linear-gradient(rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.708)), url('../../../images/header.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        .lorem {
+            width: 40%;
+            height: 60px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 45%;
+            left: 30%;
+
+        }
+
+        .n {
+            color: blue;
+            font-size: 40px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 35%;
+            left: 40%;
+        }
+
+        .comp {
+            color: #ccc;
+            font-size: 40px;
+            position: absolute;
+
+        }
+
+        .learn {
+            width: 250px;
+            height: 45px;
+            background-color: rgb(52, 52, 52);
+            border-radius: 7px;
+            position: absolute;
+            top: 70%;
+            left: 43%;
+            text-align: center;
+            line-height: 45px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .learn:hover {
+            color: blue;
+        }
+
+        #box1 {
+            width: 100%;
+            height: 200px;
+        }
+
+        .box1 {
+            width: 50%;
+            height: 300px;
+        }
+
+        .moonbox {
+
+            float: left;
+            background-image: url('../../../images/moon.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .seemoon {
+            background-color: rgb(52, 52, 52);
+            float: left;
+            position: relative;
+        }
+
+        .lo {
+            width: 400px;
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            text-align: justify;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .seem {
+            width: 300px;
+            position: absolute;
+            top: 28%;
+            left: 35%;
+            color: rgb(28, 106, 190);
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        .mo {
+            color: white;
+        }
+
+        .the {
+            width: 150px;
+            height: 44px;
+            background-color: white;
+            border-radius: 7px;
+            position: absolute;
+            top: 75%;
+            left: 43%;
+            text-align: center;
+            line-height: 45px;
+            font-family: sans-serif;
+            color: rgb(52, 52, 52);
+        }
+
+        .the:hover {
+            color: rgb(28, 106, 190);
+        }
+
+        #box2 {
+            width: 100%;
+            height: 250px;
+        }
+
+        .box2 {
+            width: 33.333%;
+            height: 250px;
+            position: relative;
+        }
+
+        .leftbox {
+
+            float: left;
+            background-image: url(../../../images/1.jpg);
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .centerbox {
+
+            float: left;
+            background-image: linear-gradient(0, 0, 0, 0.7) url(../../../images/2.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .rightbox {
+            background-color: blue;
+            float: left;
+            background-image: url(../../../images/3.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .footer {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(52, 52, 52);
+            ;
+            float: left;
+            clear: left;
+            position: relative;
+        }
+
+        .B {
+            color: white;
+            font-family: sans-serif;
+            font-size: x-large;
+            font-weight: 700;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+
+        .l {
+            color: white;
+            font-family: sans-serif;
+            font-size: large;
+            font-weight: 200;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+        }
+
+        .footerc {
+            width: 100px;
+            height: 40px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 300;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -15px;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="text">NASA</div>
+
+            <div id="box">
+                <div class="box home">home</div>
+                <div class="box earth">earth</div>
+                <div class="box sun">sun</div>
+            </div>
+
+        </div>
+
+        <div class="company">
+            <div class="learn">Learn more about space</div>
+            <span class="n">NASA
+                <span class="comp">COMPANY</span>
+            </span>
+            <span class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod neque labore quidem
+                suscipit iure veritatis saepe, temporibus quos nemo quia aliquid dolores eveniet, fugit dignissimos
+                reprehenderit ducimus debitis consequatur voluptas?</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="box1" id="box1">
+            <div class="box1 moonbox"></div>
+            <div class="box1 seemoon">
+                <span class="seem">Our beautiful
+                    <span class="mo">MOON</span>
+                </span>
+                <span class="lo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptate nostrum ad unde
+                    adipisci eaque praesentium impedit beatae, debitis similique fugiat cumque, corporis ut reiciendis
+                    veniam eum reprehenderit, sint provident!</span>
+                <div class="the">See the moon</div>
+            </div>
+        </div>
+        <div class="box2" id="box2">
+            <div class="box2 leftbox">
+                <span class="B">sample text</span>
+                <span class="l">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+            </div>
+            <div class="box2 centerbox">
+                <span class="B">sample text</span>
+                <span class="l">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+            </div>
+            <div class="box2 rightbox">
+                <span class="B">sample text</span>
+                <span class="l">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <span class="footerc">Nasa c 2022</span>
+        </div>
+    </footer>
+</body>
+
+</html>
